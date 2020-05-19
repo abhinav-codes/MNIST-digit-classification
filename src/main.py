@@ -39,7 +39,6 @@ train_data = shuffled_scaled_train_and_validation_data.skip(num_validation_sampl
 
 # Create Batches
 BATCH_SIZE = 100
-
 train_data = train_data.batch(BATCH_SIZE)
 validation_data = validation_data.batch(num_validation_samples)
 
